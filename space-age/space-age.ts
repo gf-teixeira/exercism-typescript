@@ -7,7 +7,6 @@ const planets: {[key: string]: number} = {
     'saturn':  29.447498,
     'uranus':  84.016846, 
     'neptune':  164.79132 
-
 }
 
 export function age(planet: string, seconds: number): number{
