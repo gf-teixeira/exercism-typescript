@@ -1,9 +1,9 @@
 export function count(sentence: string) {
 	let splitedSentence = sentence.replace(/\s+/g, ' ').trim().toLowerCase().split(' ');
-	let map = new Map();
+	let map = new Map<string, number>();
 	splitedSentence.forEach((word) => {
-		map.set(word, map.get(word)+1 || 1);
-
+		let oldCount = map.get(word) || 0;
+		map.set(word,  oldCount+1);
 	})
 	return map
 }
