@@ -4,11 +4,11 @@ export function compute(left: string, right: string): number{
 	
 	const leftStrand = [...left];
 	const rightStrand = [...right];
-	let cout = 0;
+	let count = 0;
 
 	for(let i=0; i<left.length; i++){
-		if(leftStrand[i] !== rightStrand[i]) cout++;
+		if(leftStrand[i] !== rightStrand[i]) count++;
 	}
-	return cout;
+	return count;
 
 }
